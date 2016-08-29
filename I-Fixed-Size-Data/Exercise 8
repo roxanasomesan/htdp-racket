@@ -1,0 +1,6 @@
+(require 2htdp/image)
+ (define cat .)
+(define inaltime (image-height cat))
+(define latime (image-width cat))
+(define rezultat (if (> inaltime latime) "tall"
+(if (= inaltime latime) "square" "wide")))
