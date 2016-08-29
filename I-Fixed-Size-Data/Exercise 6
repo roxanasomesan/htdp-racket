@@ -1,0 +1,27 @@
+boat
+(require 2htdp/image)
+(overlay/xy (overlay (rectangle 3 83.8 "solid" "brown")
+           (triangle 100 "solid" "blue"))
+            0.1 90
+           (triangle/ssa 60 60 130 "solid" "black"))
+Tree
+
+(require 2htdp/image)
+(overlay/xy
+ (rectangle 27 70 "solid" "brown")
+         -30 -83.6
+         (rotate 180
+        (overlay/offset
+   (overlay/offset (circle 30 'solid "green")
+                   26 0
+                   (circle 30 'solid "green"))
+   0 26
+   (circle 30 'solid "green"))))
+(require 2htdp/image)
+
+(overlay/offset (overlay/xy (rectangle 60 50 "solid" "black")
+              30 20
+              (rectangle 50 30 "solid" "black"))
+               30 30
+   (overlay (circle 3 "solid" "black")
+         (circle 6 "outline" "black")))
