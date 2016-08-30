@@ -1,0 +1,6 @@
+(require 2htdp/image)
+(define in "hello")
+
+(if (string? in) (string-length in)  
+  (if (image? in) (* (image-width in) (image-height in))
+(if (<= in 0) 10 20)))
