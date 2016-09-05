@@ -1,0 +1,2 @@
+(define (two-points x y) (sqrt (+ (sqr x) (sqr y))))
+(two-points 3 4)
