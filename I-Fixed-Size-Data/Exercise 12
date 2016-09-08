@@ -1,0 +1,2 @@
+(define (cvolume x) ( expt x 3))
+(define (csurface x) (* 6 ( expt x 2)))
