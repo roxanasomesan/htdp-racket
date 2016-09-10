@@ -1,1 +1,2 @@
 (define (string-first x)(substring x 0 1))
+(string-first "hello")
