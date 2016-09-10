@@ -1,1 +1,1 @@
-(define (string-first x)(substring x 1))
+(define (string-first x)(substring x 0 1))
